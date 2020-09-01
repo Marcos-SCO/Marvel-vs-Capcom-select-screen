@@ -4,8 +4,10 @@ Seleção de personagens do Marvel Vs Capcom
 
 Acesso no link : http://marvelvscapcom.epizy.com/
 
-<p align="center">
+<p align="left">
+  <a href='http://marvelvscapcom.epizy.com/'>
   <img src="https://github.com/Marcos-SCO/Marvel-vs-Capcom-select-select-screen/blob/master/model/img/heroes.gif?raw=true" width="700" title="batman">
+  </a>
 </p>
 
 ## Tecnologias Utilizadas 🚀
