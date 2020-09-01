@@ -2,7 +2,11 @@
 Marvel vs Capcom screen selection 
 Seleção de personagens do Marvel Vs Capcom
 
-Acesse no link : http://marvelvscapcom.epizy.com/
+Acesso no link : http://marvelvscapcom.epizy.com/
+
+<p align="center">
+  <img src="https://github.com/Marcos-SCO/Marvel-vs-Capcom-select-select-screen/blob/master/model/img/heroes.gif?raw=true" width="700" title="batman">
+</p>
 
 ## Tecnologias Utilizadas 🚀
 
@@ -10,12 +14,6 @@ Acesse no link : http://marvelvscapcom.epizy.com/
 - CSS3
 - JAVASCRIPT
 - PHP
-
-## Resultado Final
-
-<p align="center">
-  <img src="resultado final.png" width="700" title="batman">
-</p>
 
 ## Outros Projetos 💻
 
