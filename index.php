@@ -24,9 +24,13 @@
 	?>
 
 	<footer>
-		<p><a target="_blank" href="https://mscwps.000webhostapp.com/">2019 | <?= date('Y') ?> &copy; Marcos dos Santos Carvalho </a></p>
-		<p></p>
+		<p><a target="_blank" href="https://mscwps.000webhostapp.com/">2019 | <span id="currYear">-</span> &copy; Marcos dos Santos Carvalho </a></p>
 	</footer>
+	<script>
+		const date = new Date();
+		let currYearElement = document.querySelector('#currYear');
+		currYearElement.innerHTML = date.getFullYear();
+	</script>
 </body>
 
 </html>
