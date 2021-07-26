@@ -1,5 +1,7 @@
 const selection = document.querySelector('.selection');
 
+const clickedTrays = [];
+
 selection.addEventListener('click', function (e) {
 	e.preventDefault();
 	e.stopPropagation();
@@ -23,6 +25,11 @@ selection.addEventListener('click', function (e) {
 		document.getElementById('coin').innerHTML = '<audio src="audio/select.mp3" autoplay volume="0.2"></audio>';
 
 		const randomSound = Math.floor(Math.random() * 8) + 1;
+		if (clickedTrays.includes(characterName)) {
+			console.log(characterName)
+		}
+
+		clickedTrays.push(characterName);
 
 		document.getElementById('som').innerHTML = `<audio src="audio/${characterName}/${randomSound}.wav" autoplay></audio>`;
 	}
