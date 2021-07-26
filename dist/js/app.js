@@ -1,6 +1,58 @@
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/js/activeUrl.js":
+/*!*****************************!*\
+  !*** ./src/js/activeUrl.js ***!
+  \*****************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var core_js_modules_es_regexp_exec_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.regexp.exec.js */ "./node_modules/core-js/modules/es.regexp.exec.js");
+/* harmony import */ var core_js_modules_es_regexp_exec_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_regexp_exec_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es_string_replace_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.string.replace.js */ "./node_modules/core-js/modules/es.string.replace.js");
+/* harmony import */ var core_js_modules_es_string_replace_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_replace_js__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var selectContainer = document.querySelector('.selectContainer');
+var introduction = document.querySelector('.introduction');
+var selectBtn = document.querySelector('#selectBtn');
+var characterSelectAudio = document.querySelector('#characterSelectAudio');
+
+function getUrlVars() {
+  var vars = {};
+  var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+    vars[key] = value;
+  });
+  return vars;
+}
+
+function playSelectionSong() {
+  characterSelectAudio.play();
+  characterSelectAudio.volume = 0.35;
+}
+
+function showActivePage() {
+  var selectionPage = getUrlVars().page == 'selecao';
+
+  if (selectionPage) {
+    selectContainer.classList.add('active');
+    introduction.classList.add('hide');
+    playSelectionSong();
+  }
+}
+
+showActivePage();
+selectBtn.addEventListener('click', function (e) {
+  e.preventDefault();
+  window.history.pushState(null, null, '?page=selecao');
+  playSelectionSong();
+  showActivePage();
+});
+
+/***/ }),
+
 /***/ "./src/js/app.js":
 /*!***********************!*\
   !*** ./src/js/app.js ***!
@@ -10,6 +62,8 @@
 __webpack_require__(/*! ./date */ "./src/js/date.js");
 
 __webpack_require__(/*! ./selection */ "./src/js/selection.js");
+
+__webpack_require__(/*! ./activeUrl */ "./src/js/activeUrl.js");
 
 /***/ }),
 

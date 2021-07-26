@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Marvel VS Capcom</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/css/app.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html"><img src="img/MVC_logo.png" /></a>
+    </header>
+
+    <audio src="audio/seleheroes.wav" autoplay>
+      Your browser does not support the audio element.
+    </audio>
+
+    <section class="introduction">
+      <div class="con">
+        <h1>Marvel vs Capcom</h1>
+
+        <a href="?page=selecao" id="selectBtn"><img src="img/select_screeen/select.png" /></a>
+      </div>
+    </section>
+
+    <audio src="audio/mvc_character_selec1.mp3" id="characterSelectAudio">Your browser does not support the audio element.</audio>
+    <!--<audio src="audio/seleheroes.wav" autoplay>Your browser does not support the audio element.</audio>-->
+    
+    <div class="selectContainer container">
+      <div class="upcontainer">
+        <section class="imgS">
+          <figure>
+            <div id="img"></div>
+            <span id="som"></span>
+            <span id="coin"></span>
+            <figcaption>
+              <p id="p">Something</p>
+            </figcaption>
+          </figure>
+        </section>
+        <section class="selection">
+          <a href="#" class="characterSelect" data-character="chunli">
+            <img src="img/select_screeen/chunli_mini.png" />
+          </a>
+          <a href="#" class="characterSelect" data-character="ryu">
+            <img src="img/select_screeen/ryu_mini.png" />
+          </a>
+          <a href="#" class="characterSelect" data-character="zangief">
+            <img src="img/select_screeen/zangief_mini.png" />
+          </a>
+          <a href="#" class="characterSelect" data-character="morrigan">
+            <img src="img/select_screeen/morrigan_mini.png" />
+          </a>
+          <a href="#" class="characterSelect" data-character="captain_commando">
+            <img src="img/select_screeen/commando_mini.png" />
+          </a>
+          <a href="#" class="characterSelect" data-character="megaman">
+            <img src="img/select_screeen/megaman_mini.png" />
+          </a>
+          <a href="#" class="characterSelect" data-character="strider">
+            <img src="img/select_screeen/strider_mini.png" />
+          </a>
+          <a href="#" class="characterSelect" data-character="spiderman">
+            <img src="img/select_screeen/spiderman_mini.png" />
+          </a>
+          <a href="#" class="characterSelect" data-character="jin">
+            <img src="img/select_screeen/jin_mini.png" />
+          </a>
+          <a href="#" class="characterSelect" data-character="captain_america">
+            <img src="img/select_screeen/america_mini.png" />
+          </a>
+          <a href="#" class="characterSelect" data-character="venom">
+            <img src="img/select_screeen/venoom_mini.png" />
+          </a>
+          <a href="#" class="characterSelect" data-character="hulk">
+            <img src="img/select_screeen/hulk_mini.png" />
+          </a>
+          <a href="#" class="characterSelect" data-character="gambit">
+            <img src="img/select_screeen/gambit_mini.png" />
+          </a>
+          <a href="#" class="characterSelect" data-character="warmachine">
+            <img src="img/select_screeen/warmachine_mini.png" />
+          </a>
+          <a href="#" class="characterSelect" data-character="wolverine">
+            <img src="img/select_screeen/wolverine_mini.png" />
+          </a>
+        </section>
+
+        <section class="face" class="characterSelect" id="face"></section>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        <a target="_blank" href="https://mscwps.000webhostapp.com/"
+          >2019 | <span id="currYear">-</span> &copy; Marcos dos Santos Carvalho
+        </a>
+      </p>
+    </footer>
+
+    <script src="dist/js/app.js"></script>
+  </body>
+</html>
