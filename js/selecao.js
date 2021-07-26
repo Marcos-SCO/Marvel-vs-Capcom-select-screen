@@ -275,7 +275,7 @@ selection.addEventListener('click', function (e) {
 
 		document.getElementById('p').innerHTML = characterName.replace('_', ' ');
 
-		document.getElementById('coin').innerHTML = '<audio src="audio/select.mp3" autoplay></audio>';
+		document.getElementById('coin').innerHTML = '<audio src="audio/select.mp3" autoplay volume="0.2"></audio>';
 
 		const randomSound = Math.floor(Math.random() * 8) + 1;
 
