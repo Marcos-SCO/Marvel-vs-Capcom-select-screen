@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<title>Marvel VS Capcom</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="dist/css/app.css">
 </head>
 
 <body>
@@ -26,11 +26,8 @@
 	<footer>
 		<p><a target="_blank" href="https://mscwps.000webhostapp.com/">2019 | <span id="currYear">-</span> &copy; Marcos dos Santos Carvalho </a></p>
 	</footer>
-	<script>
-		const date = new Date();
-		let currYearElement = document.querySelector('#currYear');
-		currYearElement.innerHTML = date.getFullYear();
-	</script>
+
+	<script src="dist/js/app.js"></script>
 </body>
 
 </html>
