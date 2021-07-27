@@ -17,6 +17,11 @@ header img {
   max-width: 200px;
 }
 
+img {
+  width: 100%;
+  margin: auto;
+}
+
 footer {
   text-align: center;
   font-size: 1.5rem;
@@ -33,9 +38,9 @@ footer a {
 }
 
 .introduction {
-	&.hide {
-		display: none;
-	}
+  &.hide {
+    display: none;
+  }
 
   display: block;
   margin: auto;
@@ -73,56 +78,68 @@ footer a {
 }
 
 .upcontainer {
+  display: grid;
+  justify-content: flex-end;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  overflow: hidden;
   max-width: 1260px;
   margin: 0 auto 3%;
   box-sizing: border-box;
   padding: 2% 0;
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  justify-content: flex-end;
-  align-items: center;
-  overflow: hidden;
   background: url(../../img/galaxy.gif) no-repeat fixed;
   background-size: cover;
+
+  .imgS {
+    margin: auto;
+    margin-left: 1rem;
+    display: block;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+
+    .characterContainer {
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .gifContainer {
+      // height: 100%;
+      height: 300px;
+      img {
+        width: 100%;
+        height: 300px;
+        object-fit: contain;
+        max-width: 350px;
+      }
+    }
+
+    figcaption {
+      padding: 0.5rem;
+      font-size: 1.6rem;
+      color: aliceblue;
+      font-family: cursive;
+      text-transform: uppercase;
+      margin: 1rem auto;
+      background: #111;
+      border: 1px solid #fff;
+      max-width: 200px;
+      text-align: center;
+      box-sizing: border-box;
+      display: none;
+    }
+  }
 }
 
-img {
-  width: 100%;
-  margin: auto;
-}
 .face {
   width: 100%;
   height: 90%;
   max-width: 490px;
   margin: auto;
 }
-.imgS {
-  margin: auto;
-  margin-left: 1rem;
-  display: block;
-  justify-content: center;
-  width: 100%;
-  text-align: center;
-}
-.imgS img {
-  width: 100%;
-  max-width: 350px;
-  object-fit: cover;
-}
-figcaption {
-  padding: 0.5rem;
-  font-size: 1.6rem;
-  color: aliceblue;
-  font-family: cursive;
-  text-transform: uppercase;
-  margin: 1rem auto;
-  background: #111;
-  border: 1px solid #fff;
-  max-width: 200px;
-  text-align: center;
-  box-sizing: border-box;
-  display: none;
-}
+
 .selection {
   display: flex;
   flex-wrap: wrap;

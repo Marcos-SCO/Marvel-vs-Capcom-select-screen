@@ -5,13 +5,31 @@
     <title>Marvel VS Capcom</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="img/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
     <link rel="stylesheet" href="dist/css/app.css" />
   </head>
@@ -21,7 +39,8 @@
       <a href="index.html"><img src="img/MVC_logo.png" /></a>
     </header>
 
-    <audio src="audio/seleheroes.wav" autoplay>
+    <!-- <audio src="audio/seleheroes.wav" autoplay> -->
+    <audio src="audio/seleheroes.wav">
       Your browser does not support the audio element.
     </audio>
 
@@ -29,21 +48,23 @@
       <div class="con">
         <h1>Marvel vs Capcom</h1>
 
-        <a href="?page=selecao" id="selectBtn"><img src="img/select_screeen/select.png" /></a>
+        <a href="?page=selecao" id="selectBtn"
+          ><img src="img/select_screeen/select.png"
+        /></a>
       </div>
     </section>
 
-    <audio src="audio/mvc_character_selec1.mp3" id="characterSelectAudio">Your browser does not support the audio element.</audio>
+    <audio src="audio/mvc_character_selec1.mp3" id="characterSelectAudio">
+      Your browser does not support the audio element.
+    </audio>
     <!--<audio src="audio/seleheroes.wav" autoplay>Your browser does not support the audio element.</audio>-->
-    
+
     <div class="selectContainer container">
       <div class="upcontainer">
         <section class="imgS">
-          <figure>
-            <div id="img"></div>
-            <figcaption>
-              <p id="p">Something</p>
-            </figcaption>
+          <figure class="characterContainer">
+            <div id="img" class="gifContainer"></div>
+            <figcaption><p id="p">Something</p></figcaption>
           </figure>
           <span id="som"></span>
           <span id="coin"></span>
@@ -102,7 +123,8 @@
 
     <footer>
       <p>
-        <a target="_blank" href="https://www.linkedin.com/in/marcos-sco/">2019 | <span id="currYear">-</span> &copy; Marcos dos Santos Carvalho
+        <a target="_blank" href="https://www.linkedin.com/in/marcos-sco/"
+          >2019 | <span id="currYear">-</span> &copy; Marcos dos Santos Carvalho
         </a>
       </p>
     </footer>
