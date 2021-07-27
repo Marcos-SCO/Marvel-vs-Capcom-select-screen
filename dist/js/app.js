@@ -123,19 +123,18 @@ function characterElement(e) {
 function displayCharacter(clickedParent) {
   var characterName = clickedParent.getAttribute('data-character'); // clickedParent.preventDefault();
 
-  document.getElementById('img').innerHTML = "<img src=\"img/gifs/".concat(characterName, ".gif\">");
   document.querySelector('figcaption').style.display = 'block';
   document.getElementById('face').innerHTML = "<img src=\"img/gifs/".concat(characterName, "_face.gif\">");
   document.getElementById('p').innerHTML = characterName.replace('_', ' ');
-  document.getElementById('coin').innerHTML = '<audio src="audio/select.mp3" autoplay volume="0.2"></audio>';
+  document.getElementById('coin').innerHTML = '<audio src="audio/select.mp3" autoplay volume="0.3"></audio>';
   sortAndPlaySound(characterName, clickedParent);
 }
 
 function sortAndPlaySound(characterName, clickedParent) {
-  var randomSound = randomNumber(8);
+  var randNum = randomNumber(8);
   var CharacterNotExitsInArray = !clickedTrays[characterName];
   if (CharacterNotExitsInArray) clickedTrays[characterName] = [];
-  var isRepeatedSound = clickedTrays[characterName].includes(randomSound);
+  var isRepeatedSound = clickedTrays[characterName].includes(randNum);
 
   if (clickedTrays[characterName].length == 8) {
     clickedTrays[characterName] = [];
@@ -147,8 +146,11 @@ function sortAndPlaySound(characterName, clickedParent) {
   }
 
   if (!isRepeatedSound) {
-    clickedTrays[characterName].push(randomSound);
-    document.getElementById('som').innerHTML = "<audio src=\"audio/".concat(characterName, "/").concat(randomSound, ".wav\" autoplay></audio>");
+    clickedTrays[characterName].push(randNum);
+    document.getElementById('img').innerHTML = "<img src=\"img/gifs/".concat(characterName, "/").concat(randNum, ".gif\">");
+    setTimeout(function () {
+      document.getElementById('som').innerHTML = "<audio src=\"audio/".concat(characterName, "/").concat(randNum, ".wav\" autoplay></audio>");
+    }, 100);
   }
 }
 

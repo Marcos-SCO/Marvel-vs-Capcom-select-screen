@@ -21,27 +21,25 @@ function displayCharacter(clickedParent) {
 	const characterName = clickedParent.getAttribute('data-character');
 	// clickedParent.preventDefault();
 
-	document.getElementById('img').innerHTML = `<img src="img/gifs/${characterName}.gif">`;
-
 	document.querySelector('figcaption').style.display = 'block';
 
 	document.getElementById('face').innerHTML = `<img src="img/gifs/${characterName}_face.gif">`;
 
 	document.getElementById('p').innerHTML = characterName.replace('_', ' ');
 
-	document.getElementById('coin').innerHTML = '<audio src="audio/select.mp3" autoplay volume="0.2"></audio>';
+	document.getElementById('coin').innerHTML = '<audio src="audio/select.mp3" autoplay volume="0.3"></audio>';
 
 	sortAndPlaySound(characterName, clickedParent);
 
 }
 
 function sortAndPlaySound(characterName, clickedParent) {
-	let randomSound = randomNumber(8);
+	let randNum = randomNumber(8);
 
 	const CharacterNotExitsInArray = !clickedTrays[characterName];
 	if (CharacterNotExitsInArray) clickedTrays[characterName] = [];
 
-	const isRepeatedSound = clickedTrays[characterName].includes(randomSound);
+	const isRepeatedSound = clickedTrays[characterName].includes(randNum);
 
 	if (clickedTrays[characterName].length == 8) {
 		clickedTrays[characterName] = [];
@@ -53,7 +51,12 @@ function sortAndPlaySound(characterName, clickedParent) {
 	}
 
 	if (!isRepeatedSound) {
-		clickedTrays[characterName].push(randomSound);
-		document.getElementById('som').innerHTML = `<audio src="audio/${characterName}/${randomSound}.wav" autoplay></audio>`;
+		clickedTrays[characterName].push(randNum);
+
+		document.getElementById('img').innerHTML = `<img src="img/gifs/${characterName}/${randNum}.gif">`;
+
+		setTimeout(() => {
+			document.getElementById('som').innerHTML = `<audio src="audio/${characterName}/${randNum}.wav" autoplay></audio>`;
+		}, 100);
 	}
 }
