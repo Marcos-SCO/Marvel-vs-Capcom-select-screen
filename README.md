@@ -6,7 +6,8 @@ Acesso no link : http://marvelvscapcom.epizy.com/
 
 <p align="left">
   <a href='http://marvelvscapcom.epizy.com/'>
-  <img src="https://github.com/Marcos-SCO/Marvel-vs-Capcom-select-select-screen/blob/master/img/heroes.gif?raw=true" width="700" title="Heroes Gif">
+  <img src="https://raw.githubusercontent.com/Marcos-SCO/Marvel-vs-Capcom-select-select-screen/development/img/heroes.gif" width="700" title="Heroes Gif">
+  <!-- <img src="https://github.com/Marcos-SCO/Marvel-vs-Capcom-select-select-screen/blob/master/img/heroes.gif?raw=true" width="700" title="Heroes Gif"> -->
   </a>
 </p>
 
