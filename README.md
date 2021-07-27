@@ -2,11 +2,11 @@
 Marvel vs Capcom screen selection 
 Seleção de personagens do Marvel Vs Capcom
 
-Projeto hospedado em dois servidores : 
+## Projeto hospedado em dois servidores : 
 
-Link github pages : https://marcos-sco.github.io/Marvel-vs-Capcom-select-select-screen/index.html
+- Link github pages : https://marcos-sco.github.io/Marvel-vs-Capcom-select-select-screen/index.html
 
-Epizy: http://marvelvscapcom.epizy.com/
+- Epizy: http://marvelvscapcom.epizy.com/
  
 
 <p align="left">
