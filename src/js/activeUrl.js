@@ -1,7 +1,6 @@
 const selectContainer = document.querySelector('.selectContainer');
 const introduction = document.querySelector('.introduction');
 const selectBtn = document.querySelector('#selectBtn');
-const characterSelectAudio = document.querySelector('#characterSelectAudio');
 
 function getUrlVars() {
   var vars = {};
@@ -12,7 +11,10 @@ function getUrlVars() {
 }
 
 function playSelectionSong() {
-  characterSelectAudio.play();
+  const characterSelectAudio = document.querySelector('#characterSelectAudio');
+  characterSelectAudio.autoplay = true;
+  // characterSelectAudio.play();
+  characterSelectAudio.load();
   characterSelectAudio.volume = 0.35;
 }
 
@@ -24,13 +26,13 @@ function showActivePage() {
     introduction.classList.add('hide');
     playSelectionSong();
   }
-} 
+}
 
 showActivePage();
 
 selectBtn.addEventListener('click', (e) => {
   e.preventDefault();
-  window.history.pushState(null,null,'?page=selecao');
+  window.history.pushState(null, null, '?page=selecao');
   playSelectionSong();
   showActivePage();
 });
