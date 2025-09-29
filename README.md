@@ -1,33 +1,36 @@
 # Marvel-vs-Capcom-select-screen
-Marvel vs Capcom screen selection 
-Seleção de personagens do Marvel Vs Capcom
 
-## Projeto hospedado em dois servidores : 
+Marvel vs Capcom Select Screen is an interactive recreation of the classic character selection screen from the Marvel vs Capcom game. This project allows users to explore and select characters from both universes, simulating the visual and audio experience of the original game.
 
-- Link github pages : https://marcos-sco.github.io/Marvel-vs-Capcom-select-screen/
+## Live Demo
 
-- Epizy: http://marvelvscapcom.epizy.com/
- 
+- GitHub Pages: https://marcos-sco.github.io/Marvel-vs-Capcom-select-screen/
 
 <p align="left">
-  <a href='http://marvelvscapcom.epizy.com/'>
-  <img src="https://raw.githubusercontent.com/Marcos-SCO/Marvel-vs-Capcom-select-select-screen/development/img/heroes.gif" width="700" title="Heroes Gif">
-  <!-- <img src="https://github.com/Marcos-SCO/Marvel-vs-Capcom-select-select-screen/blob/master/img/heroes.gif?raw=true" width="700" title="Heroes Gif"> -->
+  <a href='https://marcos-sco.github.io/Marvel-vs-Capcom-select-screen/'>
+    <img src="https://raw.githubusercontent.com/Marcos-SCO/Marvel-vs-Capcom-select-select-screen/development/img/heroes.gif" width="700" title="Heroes Gif">
   </a>
 </p>
 
-## Tecnologias Utilizadas 🚀
+## Features
 
-- HTML
-- CSS3
-- JAVASCRIPT
-- PHP
+- Displays a character selection screen inspired by Marvel vs Capcom.
+- Users can navigate between characters using mouse or keyboard.
+- Animations and visual effects when selecting characters.
+- Includes sound effects and background music for an immersive experience.
+- Useful as inspiration for game UI projects or interactive portfolios.
 
-## Outros Projetos 💻
+## Technologies Used 🚀
+
+- Html
+- Css
+- JavaScript
+
+## Other Projects 💻
 
 - [gordao110porcento](https://github.com/Marcos-SCO/gordao110porcento)
 - [pixabay-api](https://github.com/Marcos-SCO/pixabay-api)
 
-## Redes Sociais
+## Social Media
 
-- [Linkedin](https://www.linkedin.com/in/marcos-dos-santos-carvalho-67a51715a/)
+- [LinkedIn](https://www.linkedin.com/in/marcos-dos-santos-carvalho-67a51715a/)
